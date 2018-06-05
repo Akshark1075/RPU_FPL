@@ -1,0 +1,186 @@
+
+
+<% include partials/header.ejs%>
+
+
+<div class="container">
+    <div class="jumbotron " style="margin-top:0px ;padding:5px;background-color:transparent; color:white;margin-bottom:10px">
+         
+         <h1 class="text-center"> Pick your squad!!!</h1>
+        
+    <form action="/pickateam" method="post">
+     
+          <div class="row" style="width=30%;margin:5% 35%">
+               <div class="col-lg-12 col-md-12 col-sm-12" style="width=30%;margin:0 0">
+             <input type="text"name="teamname" placeholder="Team Name"class="text-center" style="width:85%">
+                </div>
+            </div>
+                <div class="row"style="margin:5% 38%;width:30%;">
+        <div class="col-lg-12 col-md-12  col-sm-12 col-xs-12">  
+<select name="p11"style="width:70%" style="background-color:black">
+   <% gk.forEach(function(gkk){ %>
+         
+       <option style="color:black" ><%=gkk.name %>
+        
+       </option>
+       <% })%>
+  </select></div>
+    </div>
+    <div class="row"style="margin:5% 50px;">
+        <div class="col-lg-3 col-md-3  col-sm-3 col-xs-3"><select name="p1"style="width:85%" >
+         <% def.forEach(function(deff){ %>
+         
+       <option style="color:black"><%= deff.name%>
+        
+       </option>
+       <% })%>
+  </select></div>
+         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"> <select name="p2"style="width:85%" >
+           <% def.forEach(function(deff){ %>
+         
+       <option style="color:black"><%= deff.name %>
+        
+       </option>
+       <% })%>
+  </select></div>
+         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">  <select name="p3"style="width:85%" >
+           <% def.forEach(function(deff){ %>
+         
+       <option style="color:black"><%= deff.name%>
+        
+       </option>
+       <% })%>
+  </select></div>
+         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">  <select name="p4"style="width:85%" >
+           <% def.forEach(function(deff){ %>
+         
+       <option style="color:black"><%= deff.name%>
+        
+       </option>
+       <% })%>
+  </select></div>
+        
+    </div>
+   <div class="row"style="margin:5% 140px;">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">  <select name="p5"style="width:85%" >
+           <% mid.forEach(function(midd){ %>
+         
+       <option style="color:black"><%=midd.name %>
+        
+       </option>
+       <% })%>
+  </select></div>
+         <div class="col-lg-4 col-md-4  col-sm-4 col-xs-4">  <select name="p6"style="width:85%" >
+       <% mid.forEach(function(midd){ %>
+         
+       <option style="color:black"><%=midd.name %>
+        
+       </option>
+       <% })%>
+  </select></div>
+         <div class="col-lg-4 col-md-4  col-sm-4 col-xs-4">  <select name="p7"style="width:85%" >
+       <% mid.forEach(function(midd){ %>
+         
+       <option style="color:black"><%=midd.name%>
+        
+       </option>
+       <% })%>
+  </select></div>
+         
+        
+    </div>
+    
+    <div class="row"style="margin:5% 140px;">
+        <div class="col-lg-4 col-md-4  col-sm-4 col-xs-4">  <select name="p8"style="width:85%" >
+       <% fwd.forEach(function(fwdd){ %>
+         
+       <option style="color:black"><%=fwdd.name %>
+        
+       </option>
+       <% })%>
+  </select></div>
+         <div class="col-lg-4 col-md-4  col-sm-4 col-xs-4">  <select name="p9"style="width:85%">
+   <% fwd.forEach(function(fwdd){ %>
+         
+       <option style="color:black"><%=fwdd.name %>
+        
+       </option>
+       <% })%>
+  </select></div>
+         <div class="col-lg-4 col-md-4  col-sm-4 col-xs-4"> <select name="p10" style="width:85%">
+   <% fwd.forEach(function(fwdd){ %>
+         
+       <option style="color:black"><%=fwdd.name %>
+        
+       </option>
+       <% })%>
+  </select></div>
+         
+        
+    </div>
+   
+    <button class="btn btn-primary btn-block"type="submit"style="width:50%;margin:0 auto;margin-bottom:20px; ">Submit</button>
+    </form>
+</div> 
+
+
+
+
+
+
+
+
+
+
+
+<!--<script>
+
+var e = document.getElementById("first");
+var first =Number( e.options[e.selectedIndex].text.substr(-1));
+var f = document.getElementById("second");
+var second =Number( f.options[f.selectedIndex].text.substr(-1));
+var g = document.getElementById("second");
+var third =Number(g.options[g.selectedIndex].text.substr(-1));
+var h = document.getElementById("second");
+var fourth =Number(h.options[h.selectedIndex].text.substr(-1));
+var i = document.getElementById("second");
+var fifth =Number(i.options[i.selectedIndex].text.substr(-1));
+var j= document.getElementById("second");
+var sixth =Number(j.options[j.selectedIndex].text.substr(-1));
+var k= document.getElementById("second");
+var seventh=Number(k.options[k.selectedIndex].text.substr(-1));
+var l = document.getElementById("second");
+var eight =Number(l.options[l.selectedIndex].text.substr(-1));
+var m = document.getElementById("second");
+var nine =Number(m.options[m.selectedIndex].text.substr(-1));
+var n = document.getElementById("second");
+var ten=Number(m.options[m.selectedIndex].text.substr(-1));
+var o = document.getElementById("second");
+var eleven =Number(o.options[o.selectedIndex].text.substr(-1));
+var total=100;
+//var x = document.getElementById("myBtn :selected").textContent;
+//console.log(document.querySelector("#first").textContent)
+ //var   first=Number(document.querySelector("#first").textContent);
+//var second=Number(document.querySelector("#second").textContent.substr(-1));
+//var third=Number(document.querySelector("#third").textContent.substr(-1));
+//var fourth=Number(document.querySelector("#fourth").textContent.substr(-1));
+//var fifth=Number(document.querySelector("#fifth").textContent.substr(-1));
+//var sixth=Number(document.querySelector("#sixth").textContent.substr(-1));
+//var seventh=Number(document.querySelector("#seventh").textContent.substr(-1));
+//var nine=Number(document.querySelector("#nine").textContent.substr(-1));
+//var ten=Number(document.querySelector("#ten").textContent.substr(-1));
+//var eleven=Number(document.querySelector("#eleven").textContent.substr(-1));
+//var total=100;
+var balance=total-(first+second+third+fourth+fifth+sixth+seventh+eight+nine+ten+eleven);
+console.log(balance);
+return balance
+
+}
+</script>-->
+
+
+
+
+
+
+<% include partials/footer.ejs%>

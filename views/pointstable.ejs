@@ -1,0 +1,61 @@
+<% include partials/header.ejs%>
+<div class="container">
+ 
+  <table class="table  well" id="table" style="margin-top: 15px;color:rgb(230, 233, 239);background:rgb(27, 28, 28);
+
+
+   width:70%;margin:0 auto;">
+   <!--  background: #02111D;  
+background: -webkit-linear-gradient(to right, #02111D, #037BB5, #02111D); 
+background: linear-gradient(to right, #02111D, #037BB5, #02111D);-->
+  <thead>
+    <tr>
+      <th scope="col">####</th>
+      <th scope="col">User_Name</th>
+      <th scope="col">Team_Name</th>
+      <th scope="col">Points</th>
+       
+    </tr>
+  </thead>
+  <tbody>
+    
+    
+  
+
+      <%user.forEach(function(userr){  %>
+
+    <% console.log(userr)%>
+    <tr>
+      
+      <th> #</th>
+      <td><%= userr.username%></td>
+      <td><%= userr.team[0].Teamname%></td>
+      <td><%= userr.team[0].Score%></td>
+    
+      </tr>
+  <%   })%> 
+    
+   
+      
+      
+      
+      
+      
+      
+      
+      
+  </tbody>
+  
+  
+  
+  
+</table>
+</div>
+
+
+
+
+
+
+
+<% include partials/footer.ejs%>

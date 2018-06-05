@@ -1,0 +1,121 @@
+<% include partials/header.ejs%>
+
+<div class="container text-center" style="padding:0px ">
+    <div class="jumbotron"style="padding:0px margin:10px 0px;background:rgb(230, 233, 239);">
+        
+        <h1 style:"margin:0 0"> <img class="logo" src="/images/zlatan.gif" alt="zlatan" width="20%">We are <span ><img class="logo" src="/images/RPU.png" alt="My_Logo" width="20%"></span>!!<img class="logo" src="/images/zlatan.gif" alt="zlatan" width="20%"></h1>
+        
+    </div>
+   <!-- <div><img style="width:100% ;height=10%" src="/images/pp.jpg"></div>-->
+   <div class="well" style="background:rgb(27, 28, 28)"> <img style="width:80% ;" src="/images/football.jpg"> </div>
+   <div class="well"style="background:rgb(230, 233, 239);">
+      
+       <p style="color:rgb(1, 92, 107);font-size:40px; align:center">
+Any crosses, any shots<br>
+I will simply stop the lot<br>
+I am always in demand<br>
+The goalie with expanding hands<br>
+Volleys, blasters, scissor kicks<br>
+I am safe between the sticks<br>
+All attacks I will withstand<br>
+The goalie with expanding hands<br>
+Free kicks or a penalty<br>
+No-one ever scores past me<br>
+Strong and bold and safe I’ll stand<br>
+The goalie with expanding hands<br>
+Let their strikers be immense<br>
+I’m the last line of defence<br>
+Alert, on duty, all posts manned<br>
+The goalie with expanding hands<br>
+Palms as long as arms expand<br>
+Thumbs and fingers ready fanned<br>
+You may as well shoot in the stand<br>
+Not a chance! Understand?<br>
+Number one in all the land<br>
+Superhuman, super-spanned<br>
+In control and in command<br>
+I’m the man, I’m the man<br>
+The one and only goalie … with my expanding hands.<br>
+<h2 class="text-right" style="color:rgb(1, 92, 107);font-size:40px;"><b>Vasu Degea</b></h2>
+</p>
+
+</div>
+   </div>
+    <div class="jumbotron text-center"style="padding:2px;color:white;background:black"><h1>Goalkeepers</h1></div>
+
+<div class="row text-center" style="display:flex; flex-wrap: wrap;">
+        <% gk.forEach(function(gkk){ %>
+            <div class="col-md-4 col-sm-6">
+                <div class="thumbnail">
+                   <img src="<%= gkk.image %>">
+                  <div class="caption text-center"style="background:rgb(146, 154, 168);color:black;height:55px;padding:2px">
+                       <h4><strong><%= gkk.name %></strong></h4>
+                   </div>
+                  
+                </div>
+            </div>
+        <% }); %>
+        </div>
+        <div class="jumbotron text-center"style="padding:2px;color:white;background:black"><h1>Defenders</h1></div>
+
+<div class="row text-center" style="display:flex; flex-wrap: wrap;">
+        <% def.forEach(function(deff){ %>
+            <div class="col-md-4 col-sm-6">
+                <div class="thumbnail">
+                   <img src="<%= deff.image %>">
+                    <div class="caption text-center"style="background:rgb(146, 154, 168);color:black;height:55px;padding:2px">
+                       <h4><strong><%= deff.name %></strong></h4>
+                   </div>
+                  
+                </div>
+            </div>
+        <% }); %>
+        </div>
+ <div class="jumbotron text-center"style="padding:2px;color:white;background:black"><h1>Midfielders</h1></div>
+
+<div class="row text-center" style="display:flex; flex-wrap: wrap;">
+        <% mid.forEach(function(midd){ %>
+            <div class="col-md-4 col-sm-6">
+                <div class="thumbnail">
+                   <img src="<%= midd.image %>">
+                    <div class="caption text-center"style="background:rgb(146, 154, 168);color:black;height:55px;padding:2px">
+                       <h4><strong><%= midd.name %></strong></h4>
+                   </div>
+                  
+                </div>
+            </div>
+        <% }); %>
+        </div>
+ <div class="jumbotron text-center"style="padding:2px;color:white;background:black;"><h1>FORWARD</h1></div>
+
+<div class="row text-center" style="display:flex; flex-wrap: wrap;">
+        <% fwd.forEach(function(fwdd){ %>
+            <div class="col-md-4 col-sm-6">
+                <div class="thumbnail">
+                   <img src="<%= fwdd.image %>">
+                 <div class="caption text-center"style="background:rgb(146, 154, 168);color:black;height:55px;padding:2px">
+                       <h4><strong><%= fwdd.name %></strong></h4>
+                   </div>
+                  
+                </div>
+            </div>
+        <% }); %>
+ 
+ </div>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<% include partials/footer.ejs%>

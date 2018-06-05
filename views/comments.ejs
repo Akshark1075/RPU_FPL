@@ -1,0 +1,45 @@
+ <% include partials/header.ejs %>
+ <div class="container">
+     
+     <div class="well"style="background:rgb(27, 28, 28)">
+         <h1 class="text-center"style="color:rgb(230, 233, 239);">If you want to say something!!!</h1>
+         <form action="/comments" method="post">
+         <textarea rows="4" cols="100" style="background:transparent;margin:10px 15%;color:rgb(230, 233, 239);padding:3px;width:80%"name="comment"></textarea>
+         <input type="submit" class="btn btn-lg btn-primary">
+         </form>
+     </div>
+      <div class="well"style="background:rgb(27, 28, 28);color:rgb(230, 233, 239);">
+         <h1 class="text-center"style="color:rgb(230, 233, 239);">Comments</h1>
+         <%comments.forEach(function(comment){ %>
+     
+      
+         <h2 >  <strong><%=comment.author.username %></strong>
+        
+       <form action="/comments/<%=comment._id%>?_method=DELETE" method="POST" style="display:inline">
+        
+           <%if(currentUser && currentUser._id.equals(comment.author.id)){%>
+         
+           <button class="btn btn-sm btn-danger pull-right"style="margin:1px">Delete</button>
+           <% }%>
+           
+          </form>
+        <%if(currentUser && currentUser._id.equals(comment.author.id)){%>
+          <a class="btn btn-sm btn-warning pull-right"style="display:inline"href="/comments/<%=comment._id%>/edit">Edit</a>
+           <% }%>
+       </h2>
+         <p><em><%=comment.text%>         </em></p>
+       
+         <% })%>
+         
+         
+         </div>
+     
+     
+     
+     
+     
+     
+     
+     
+ </div>
+ <% include partials/footer.ejs %>

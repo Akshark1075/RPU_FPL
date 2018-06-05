@@ -1,0 +1,42 @@
+<% include partials/header.ejs %>
+<div class="container text-center" style="padding:0px ">
+    <div class="jumbotron"style="background-color:transparent;padding-bottom:10px;color:white">
+        
+      <h1>Who are you!!!</h1>
+        
+    </div>
+</div>
+<div class="container"style="width:40%;margin:0 auto; color:white">
+   
+    <form action="/signup" method="POST" style="min-width:30%;height:60%">
+        <div class="form-group  col-md-6 col-sm-12">
+    	 <label  for="username">User name</label>
+      <input type="text" name="username" class="form-control" placeholder="User name" id="username">
+    </div>
+    <div class="form-group  col-md-6 col-sm-12">
+    	 <label  for="mobnum">Mobile No</label>
+      <input type="text" name="mobname" class="form-control" placeholder="Mobile Number" id="mobnum">
+    </div>
+        <div class="form-group  col-md-6 col-sm-12">
+    	 <label  for="email">Email</label>
+      <input type="email" name="email" class="form-control" placeholder="Email" id="email">
+    </div>
+        
+        <div class="form-group col-md-6 col-sm-12">
+    	 <label  for="username">Password</label>
+      <input type="password" name="password" class="form-control" placeholder="Password" id="password">
+    </div>
+        
+        <button type="submit" name="submit" class="btn btn-primary btn-block" style="margin-bottom:20px">Register</button> 
+        
+        
+    </form>
+    
+    
+    
+    
+    
+    
+    
+</div>
+<% include partials/footer.ejs %>

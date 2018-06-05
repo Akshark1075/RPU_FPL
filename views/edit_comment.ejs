@@ -1,0 +1,19 @@
+ <% include partials/header.ejs %>
+ <div class="container">
+     
+     <div class="well"style="background:rgb(27, 28, 28)">
+         <h1 class="text-center"style="color:rgb(230, 233, 239);">Edit Comment</h1>
+         <form action="/comments/<%=comment._id%>?_method=PUT" method="post">
+         <textarea rows="4" cols="100" style="background:transparent;margin:10px 15%;color:rgb(230, 233, 239);padding:3px"name="comment"><%=comment.text%></textarea>
+         <input type="submit" class="btn btn-lg btn-primary">
+         </form>
+     </div>
+     
+     
+     
+     
+     
+          
+     
+ </div>
+ <% include partials/footer.ejs %>

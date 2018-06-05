@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html style="width:100%">
+    <head>
+        <title>RPU</title>
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+       <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Satisfy" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+    select,input{color:black;}
+    body{font-family: 'Satisfy', cursive;font-size:20px}
+</style>
+ 
+</head>
+    <body style="width:100%;" background="http://atgbcentral.com/data/out/9/3954034-football-wallpaper-hd.jpg"style="background-repeat:no-repeat; background-size:cover; background-position:center;height:150%;">
+        <nav class="navbar navbar-inverse">
+	<div class="container">
+
+<div class="navbar-header" >
+      
+	<a  href="/rpu" class="navbar-brand" style="width:50%;" ><span ><img class="logo" src="/images/RPU.png" alt="My_Logo" width="20%"></span></a>
+ <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#heeha">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button> 
+</div>    
+<div class="collapse navbar-collapse" id="heeha">
+    <ul class="nav navbar-nav"style="margin-right:30%;margin-left:0%">
+	<!--<li><a href="/pickateam">Pick-a-team</a></li>-->
+	<li><a href="/yourteam">My_Team</a></li>
+	<li><a href="/pointstable">Points_Table</a></li>
+	<li><a href="/info">How_to_play</a></li>
+		<li><a href="/comments">Comments</a></li>
+	</ul>
+    
+    <ul class="nav navbar-nav navbar-right">
+<% if(!currentUser){%>
+	<li ><a href="/signup"><span class="glyphicon glyphicon-user"></span>Sign up</a></li>
+	<li ><a href="/login"><span class="glyphicon glyphicon-log-in">Login</a></li>
+
+<% } else {%>
+    <li style="padding:0;margin-top:7px;color:white;"><h2 style="margin:0 0;padding:0"> Hi <%=currentUser.username%></h2></li>  
+	<li ><a href="/logout"><span class="glyphicon glyphicon-log-in">Logout</a></li>
+	<% }%>
+</ul>
+</div></div>
+
+</nav>
+ <% if(error && error.length>0){%>
+<div class="container">
+    <div class="alert alert-danger" role="alert">
+        <%= error %>
+    </div>
+    
+</div>
+ <% }%>
+        <% if(success && success.length>0){%>
+      <div class="container">
+    <div class="alert alert-success" role="alert">
+        <%= success%>
+    </div>
+    
+</div>
+     <% }%>   
