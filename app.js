@@ -459,7 +459,7 @@ app.get("/pointstable",function(req,res){
     if(err){console.log(err);}
     else{
     
-   
+   console.log(user);
     res.render("pointstable",{user:user})
     }})
 })
