@@ -204,7 +204,7 @@ else{if(comment.author.id.equals(req.user._id)){
            
        } } })
 })
-app.get("/rpu",function(req,res){
+app.get("/",function(req,res){
      Def.find({},function(err,def){
                      if(err){console.log(err)}
                     else
