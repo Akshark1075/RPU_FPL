@@ -390,7 +390,9 @@ res.redirect("/login");
 app.get("/yourteam",isLoggedIn,function(req,res){
     User.findOne({username:req.user.username}).populate("team").exec(function(err,user){
     if(err){console.log(err);}
+    
     else{console.log(user);}
+    if(user.team[0]){
     
      
      console.log(user.team[0].Player1)
@@ -437,7 +439,7 @@ Team.update( { Teamname:user.team[0].Teamname }, { $set: {Score:score}},function
          }}); 
        }}); 
     
-   
+    }else{res.redirect("/pickateam")}
     
      
      
