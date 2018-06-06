@@ -460,6 +460,7 @@ app.get("/pointstable",function(req,res){
     else{
     
    console.log(user);
+   
     res.render("pointstable",{user:user})
     }})
 })

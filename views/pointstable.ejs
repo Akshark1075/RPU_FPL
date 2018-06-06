@@ -33,14 +33,16 @@ background: linear-gradient(to right, #02111D, #037BB5, #02111D);-->
       <td><%= userr.team[0].Teamname%></td>
       
       <% }else{ %>
-      <td>not specified </td>
+      <td>null </td>
       <% }%>
       
-      <% if(userr.team[0].Score){%>
+       <% if(userr.team[0].Teamname){%>
       <td><%= userr.team[0].Score%></td>
-    <% }else{ %>
-    <td>not specified </td>
-     <% }%>
+       
+      <% }else{ %>
+      <td>null </td>
+      <% }%>
+    
       </tr>
   <%   })%> 
     
