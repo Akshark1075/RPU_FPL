@@ -33,7 +33,8 @@ app.use(express.static('partials'));
 app.use(express.static('public'));
 app.use(flash());
 var mongoose=require("mongoose");
-mongoose.connect("mongodb://localhost/rpu");
+mongoose.connect(process.env.DATABASEURL);
+
 app.use(require("express-session")({
     secret:"hola",
     resave:false,
