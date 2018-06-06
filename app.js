@@ -33,8 +33,8 @@ app.use(express.static('partials'));
 app.use(express.static('public'));
 app.use(flash());
 var mongoose=require("mongoose");
-//mongoose.connect("mongodb://localhost/rpu");
-mongoose.connect("mongodb://SharkyArvind:Sharky007@ds131492.mlab.com:31492/rpudb")
+mongoose.connect("mongodb://localhost/rpu");
+//mongoose.connect("mongodb://SharkyArvind:Sharky007@ds131492.mlab.com:31492/rpudb")
 app.use(require("express-session")({
     secret:"hola",
     resave:false,
@@ -366,14 +366,14 @@ app.get("/login",function(req,res){
     res.render("login");
 });
 app.post("/login", passport.authenticate("local",{
-    successRedirect:"/rpu",
+    successRedirect:"/",
     failureRedirect:"/login"
 }),function(req,res){
 });
 app.get("/logout",function(req,res){
     req.logout();
     req.flash("success","Logged out successfully")
-    res.redirect("/rpu");
+    res.redirect("/");
     
 });
 function isLoggedIn(req,res,next){
