@@ -452,7 +452,7 @@ Team.update( { Teamname:user.team[0].Teamname }, { $set: {Score:score}},function
     })
 })
 
-app.get("/pointstable",function(req,res){
+app.get("/pointstable",isLoggedIn,function(req,res){
 
     
     
@@ -462,8 +462,7 @@ app.get("/pointstable",function(req,res){
     else{
     
    console.log(user);
-   
-    res.render("pointstable",{user:user})
+       res.render("pointstable",{user:user})
     }})
 })
 
