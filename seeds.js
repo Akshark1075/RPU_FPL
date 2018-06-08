@@ -79,7 +79,7 @@
       {
           console.log("Removed fwd");
           var data3=[{name:"Kutti",image:"/images/demo.jpg",score:"0",value:"5"},
-                    {name:"Andrew",image:"/images/demo.jpg",score:"0",value:"5"},
+                    {name:"Andrew",image:"/images/demo.jpg",score:"1",value:"5"},
                     {name:"Venky",image:"/images/demo.jpg",score:"0",value:"5"},
                     {name:"Abishek",image:"/images/demo.jpg",score:"0",value:"5"},
                     {name:"Rajesh",image:"/images/demo.jpg",score:"2",value:"5"},
