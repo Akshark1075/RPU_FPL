@@ -219,7 +219,62 @@ app.get("/",function(req,res){
                                             {Gk.find({},function(err,gk){
                                           if(err){console.log(err)}
                                           else
-                                          {
+                                          {   User.find({}).populate("team").exec(function(err,user){
+    if(err){console.log(err);}
+    else{
+    
+   console.log(user);
+   
+                                              user.forEach(function(user){
+     if(user.team[0]){
+    
+     
+     console.log(user.team[0].Player1)
+     Def.findOne({name:user.team[0].Player1},function(err,Pla1){if(err){console.log(err)}else {
+         Def.findOne({name:user.team[0].Player2},function(err,Pla2){
+             if(err){console.log(err)}else {
+               Def.findOne({name:user.team[0].Player3},function(err,Pla3){if(err){console.log(err)}else {
+                    Def.findOne({name:user.team[0].Player4},function(err,Pla4){if(err){console.log(err)}else {
+                        Mid.findOne({name:user.team[0].Player5},function(err,Pla5){if(err){console.log(err)}else {
+                             Mid.findOne({name:user.team[0].Player6},function(err,Pla6){if(err){console.log(err)}else {
+                                  Mid.findOne({name:user.team[0].Player7},function(err,Pla7){if(err){console.log(err)}else {
+                                      Fwd.findOne({name:user.team[0].Player8},function(err,Pla8){if(err){console.log(err)}else {
+                                          Fwd.findOne({name:user.team[0].Player9},function(err,Pla9){if(err){console.log(err)}else {
+                                                Fwd.findOne({name:user.team[0].Player9},function(err,Pla9){if(err){console.log(err)}else {
+                                                    Fwd.findOne({name:user.team[0].Player10},function(err,Pla10){if(err){console.log(err)}else {
+                                                        Gk.findOne({name:user.team[0].Player11},function(err,Pla11){if(err){console.log(err)}else {
+                                                            
+                                                            
+
+        console.log(Pla1)
+        //var previousscore=user.team[0].Score;
+        //score=Number( previousscore)+Number(Pla1.score)+ Number(Pla2.score)+Number(Pla3.score)+Number(Pla4.score)+Number(Pla5.score)+Number(Pla6.score)+Number(Pla7.score)+Number(Pla8.score)+Number(Pla9.score)+Number(Pla10.score)+Number(Pla11.score);
+        score=Number(Pla1.score)+ Number(Pla2.score)+Number(Pla3.score)+Number(Pla4.score)+Number(Pla5.score)+Number(Pla6.score)+Number(Pla7.score)+Number(Pla8.score)+Number(Pla9.score)+Number(Pla10.score)+Number(Pla11.score);
+        console.log(score);
+        console.log(typeof(score));
+Team.update( { Teamname:user.team[0].Teamname }, { $set: {Score:score}},function(err,hi){
+    if(err){console.log(err);}
+    else
+    {
+        console.log(hi)
+    }
+} );
+       
+                                                        }});
+                                                    }});
+                                                }}); 
+                                          }}); 
+                                     }}); 
+                                  }});
+                             }}); 
+                       } }); 
+                    }});
+               }});   
+         }}); 
+       }});
+       
+   } 
+   })  }})
                                                  { res.render("homepage",{def:def,mid:mid,fwd:fwd,gk:gk})}
                                            }}) }})
        
@@ -452,7 +507,7 @@ Team.update( { Teamname:user.team[0].Teamname }, { $set: {Score:score}},function
     })
 })
 
-app.get("/pointstable",isLoggedIn,function(req,res){
+app.get("/pointstable",function(req,res){
 
     
     
@@ -462,8 +517,9 @@ app.get("/pointstable",isLoggedIn,function(req,res){
     else{
     
    console.log(user);
-       res.render("pointstable",{user:user})
-    }})
+   
+   res.render("pointstable",{user:user})
+   }})
 })
 
 app.listen(process.env.PORT,process.env.ID,function(){
