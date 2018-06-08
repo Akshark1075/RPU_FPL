@@ -4,6 +4,7 @@ var mongoose=require("mongoose");
 var Schema = mongoose.Schema;
 
 var TeamSchema=new mongoose.Schema({
+   
    Teamname:String,
    Player1:String,
    Player2:String,

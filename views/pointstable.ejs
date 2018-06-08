@@ -30,7 +30,7 @@ background: linear-gradient(to right, #02111D, #037BB5, #02111D);-->
       <th> #</th>
       <td><%= userr.username%></td>
      <% if(userr.team[0]){%>
-      <td><%= userr.team[0].Teamname%></td>
+      <td><%= userr.team[0].Teamname%> <a href="/showpage/<%=userr.team[0]._id %>" class="btn btn-success pull-right">View Team </a></td>
       
       <% }else{ %>
       <td>null </td>

@@ -507,6 +507,21 @@ Team.update( { Teamname:user.team[0].Teamname }, { $set: {Score:score}},function
     })
 })
 
+app.get("/showpage/:id",function(req,res){
+
+Team.findById(req.params.id , function (err, team) { 
+      if(err){console.log(err);}
+      
+      res.render("showpage",{user:team});
+      console.log(team)
+  });
+
+
+//User.findById(req.params.id,function(err,team){if(err){console.log(err)}
+ //       else  {res.send("hi")}
+  //  })
+    
+})
 app.get("/pointstable",function(req,res){
 
     
