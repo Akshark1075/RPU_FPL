@@ -12,21 +12,21 @@
       else
       {
           console.log("Removed def");
-          var data1=[{name:"Sharky",image:"/images/demo.jpg",score:"2",value:"5"},
+          var data1=[{name:"Sharky",image:"/images/demo.jpg",score:"0",value:"5"},
                     {name:"Adhi",image:"/images/demo.jpg",score:"0",value:"5"},
                     {name:"Sudhar",image:"/images/demo.jpg",score:"0",value:"5"},
                     {name:"OX",image:"/images/demo.jpg",score:"0",value:"5"},
                     {name:"Arjun",image:"/images/demo.jpg",score:"0",value:"5"},
                     {name:"Rahul",image:"/images/demo.jpg",score:"0",value:"5"},
-                    {name:"Sanjeevi",image:"/images/demo.jpg",score:"2",value:"5"},
+                    {name:"Sanjeevi",image:"/images/demo.jpg",score:"0",value:"5"},
                     {name:"Yomi",image:"/images/demo.jpg",score:"0",value:"5"},
                     {name:"Rajil",image:"/images/demo.jpg",score:"0",value:"5"},
-                    {name:"Jagan",image:"/images/demo.jpg",score:"2",value:"5"},
+                    {name:"Jagan",image:"/images/demo.jpg",score:"0",value:"5"},
                     {name:"Kotti",image:"/images/demo.jpg",score:"0",value:"5"},
                     {name:"Vipul",image:"/images/demo.jpg",score:"0",value:"5"},
                     {name:"Hari",image:"/images/demo.jpg",score:"0",value:"5"},
                     {name:"Aathma",image:"/images/demo.jpg",score:"0",value:"5"},
-                    {name:"Boomi",image:"/images/demo.jpg",score:"2",value:"5"}
+                    {name:"Boomi",image:"/images/demo.jpg",score:"0",value:"5"}
               ];
               data1.forEach(function(def){
             Def.create(def,function(err){
@@ -45,16 +45,16 @@
       {
           console.log("Removed mid");
           var data2=[{name:"Abijith",image:"/images/demo.jpg",score:"0",value:"5"},
-                    {name:"Jeff",image:"/images/demo.jpg",score:"2",value:"5"},
+                    {name:"Jeff",image:"/images/demo.jpg",score:"0",value:"5"},
                     {name:"Reva",image:"/images/demo.jpg",score:"0",value:"5"},
                     {name:"Sai",image:"/images/demo.jpg",score:"0",value:"5"},
                     {name:"China",image:"/images/demo.jpg",score:"0",value:"5"},
                     {name:"Satish",image:"/images/demo.jpg",score:"0",value:"5"},
                     {name:"Bharath",image:"/images/demo.jpg",score:"0",value:"5"},
-                    {name:"Praz",image:"/images/demo.jpg",score:"2",value:"5"},
+                    {name:"Praz",image:"/images/demo.jpg",score:"0",value:"5"},
                     {name:"Rohit",image:"/images/demo.jpg",score:"0",value:"5"},
-                    {name:"Siva",image:"/images/demo.jpg",score:"2",value:"5"},
-                    {name:"Mano",image:"/images/demo.jpg",score:"2",value:"5"},
+                    {name:"Siva",image:"/images/demo.jpg",score:"0",value:"5"},
+                    {name:"Mano",image:"/images/demo.jpg",score:"0",value:"5"},
                     {name:"Barghav",image:"/images/demo.jpg",score:"0",value:"5"},
                     {name:"Vaidhi",image:"/images/demo.jpg",score:"0",value:"5"},
                     {name:"Ash",image:"/images/demo.jpg",score:"0",value:"5"}
@@ -78,8 +78,8 @@
       else
       {
           console.log("Removed fwd");
-          var data3=[{name:"Kutti",image:"/images/demo.jpg",score:"7",value:"5"},
-                    {name:"Andrew",image:"/images/demo.jpg",score:"2",value:"5"},
+          var data3=[{name:"Kutti",image:"/images/demo.jpg",score:"0",value:"5"},
+                    {name:"Andrew",image:"/images/demo.jpg",score:"0",value:"5"},
                     {name:"Venky",image:"/images/demo.jpg",score:"0",value:"5"},
                     {name:"Abishek",image:"/images/demo.jpg",score:"0",value:"5"},
                     {name:"Rajesh",image:"/images/demo.jpg",score:"0",value:"5"},
@@ -89,7 +89,7 @@
                     {name:"Santosh",image:"/images/demo.jpg",score:"0",value:"5"},
                     {name:"Sudharshan",image:"/images/demo.jpg",score:"0",value:"5"},
                     {name:"Prem",image:"/images/demo.jpg",score:"0",value:"5"},
-                     {name:"Naveenjii",image:"/images/demo.jpg",score:"7",value:"5"}
+                     {name:"Naveenjii",image:"/images/demo.jpg",score:"0",value:"5"}
                     
               
               
@@ -110,7 +110,7 @@
       else
       {
           console.log("Removed gk");
-          var data4=[{name:"Vasu",image:"/images/demo.jpg",score:"2",value:"5"},
+          var data4=[{name:"Vasu",image:"/images/demo.jpg",score:"0",value:"5"},
                    
                     {name:"Maddy",image:"/images/demo.jpg",score:"0",value:"5"},
                     {name:"Ravinder",image:"/images/demo.jpg",score:"0",value:"5"},

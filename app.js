@@ -511,9 +511,36 @@ app.get("/showpage/:id",function(req,res){
 
 Team.findById(req.params.id , function (err, team) { 
       if(err){console.log(err);}
+      console.log(team);
+      Def.findOne({name:team.Player1},function(err,Pla1){if(err){console.log(err)}else {
+         Def.findOne({name:team.Player2},function(err,Pla2){
+             if(err){console.log(err)}else {
+               Def.findOne({name:team.Player3},function(err,Pla3){if(err){console.log(err)}else {
+                    Def.findOne({name:team.Player4},function(err,Pla4){if(err){console.log(err)}else {
+                        Mid.findOne({name:team.Player5},function(err,Pla5){if(err){console.log(err)}else {
+                             Mid.findOne({name:team.Player6},function(err,Pla6){if(err){console.log(err)}else {
+                                  Mid.findOne({name:team.Player7},function(err,Pla7){if(err){console.log(err)}else {
+                                      Fwd.findOne({name:team.Player8},function(err,Pla8){if(err){console.log(err)}else {
+                                          Fwd.findOne({name:team.Player9},function(err,Pla9){if(err){console.log(err)}else {
+                                                Fwd.findOne({name:team.Player9},function(err,Pla9){if(err){console.log(err)}else {
+                                                    Fwd.findOne({name:team.Player10},function(err,Pla10){if(err){console.log(err)}else {
+                                                        Gk.findOne({name:team.Player11},function(err,Pla11){if(err){console.log(err)}else {
+                                                           
       
-      res.render("showpage",{user:team});
-      console.log(team)
+      res.render("showpage",{user:team,Pla1:Pla1,Pla2:Pla2,Pla3:Pla3,Pla4:Pla4,Pla5:Pla5,Pla6:Pla6,Pla7:Pla7,Pla8:Pla8,Pla9:Pla9,Pla10:Pla10,Pla11:Pla11
+                                            });
+                                          }});
+                                                    }});
+                                                }}); 
+                                          }}); 
+                                     }}); 
+                                  }});
+                             }}); 
+                       } }); 
+                    }});
+               }});   
+         }}); 
+       }});
   });
 
 
