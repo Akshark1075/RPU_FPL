@@ -22,11 +22,13 @@
                     {name:"Yomi",image:"/images/demo.jpg",score:"0",value:"5"},
                     {name:"Rajil",image:"/images/demo.jpg",score:"0",value:"5"},
                     {name:"Jagan",image:"/images/demo.jpg",score:"6",value:"5"},
-                    {name:"Kotti",image:"/images/demo.jpg",score:"0",value:"5"},
+                    {name:"Kotti",image:"/images/demo.jpg",score:"6",value:"5"},
                     {name:"Vipul",image:"/images/demo.jpg",score:"0",value:"5"},
                     {name:"Hari",image:"/images/demo.jpg",score:"0",value:"5"},
-                    {name:"Aathma",image:"/images/demo.jpg",score:"0",value:"5"},
-                    {name:"Boomi",image:"/images/demo.jpg",score:"6",value:"5"}
+                    {name:"Aathma",image:"/images/demo.jpg",score:"6",value:"5"},
+                    {name:"Boomi",image:"/images/demo.jpg",score:"6",value:"5"},
+                     {name:"Aravind",image:"/images/demo.jpg",score:"0",value:"5"}
+                   
               ];
               data1.forEach(function(def){
             Def.create(def,function(err){
@@ -57,7 +59,11 @@
                     {name:"Mano",image:"/images/demo.jpg",score:"3",value:"5"},
                     {name:"Barghav",image:"/images/demo.jpg",score:"3",value:"5"},
                     {name:"Vaidhi",image:"/images/demo.jpg",score:"0",value:"5"},
-                    {name:"Ash",image:"/images/demo.jpg",score:"0",value:"5"}
+                    {name:"Ash",image:"/images/demo.jpg",score:"0",value:"5"},
+                     {name:"Stephen",image:"/images/demo.jpg",score:"0",value:"5"},
+                      {name:"Vishnu",image:"/images/demo.jpg",score:"0",value:"5"}
+                   
+                   
                    
               
              
