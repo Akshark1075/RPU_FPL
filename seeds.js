@@ -47,7 +47,7 @@
       {
           console.log("Removed mid");
           var data2=[{name:"Abijith",image:"/images/demo.jpg",score:"0",value:"5"},
-                    {name:"Jeff",image:"/images/demo.jpg",score:"3",value:"5"},
+                    {name:"Jeff",image:"/images/demo.jpg",score:"8",value:"5"},
                     {name:"Reva",image:"/images/demo.jpg",score:"0",value:"5"},
                     {name:"Sai",image:"/images/demo.jpg",score:"0",value:"5"},
                     {name:"China",image:"/images/demo.jpg",score:"0",value:"5"},
