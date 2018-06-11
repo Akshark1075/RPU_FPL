@@ -14,6 +14,7 @@ background: linear-gradient(to right, #02111D, #037BB5, #02111D);-->
       <th scope="col">User_Name</th>
       <th scope="col">Team_Name</th>
       <th scope="col">Points</th>
+        <th scope="col">Total</th>
        
     </tr>
   </thead>
@@ -42,11 +43,16 @@ background: linear-gradient(to right, #02111D, #037BB5, #02111D);-->
       <% }else{ %>
       <td>null </td>
       <% }%>
-    
+      <%if(userr.Total!=null){ %>
+     <td><%=userr.Total %></td>
+     <% }else{ %>
+      <td>null</td>
+      <% }%>
       </tr>
+       
   <%   })%> 
     
-   
+ 
       
       
       

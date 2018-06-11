@@ -13,7 +13,8 @@ var UserSchema=new mongoose.Schema({
     comments:[{
         type:mongoose.Schema.Types.ObjectId,
         ref:"Comment"
-    }]
+    }],
+    Total:String
 });
 UserSchema.plugin(passportLocalMongoose);
 module.exports =  mongoose.model('User', UserSchema)
