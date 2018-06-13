@@ -31,7 +31,7 @@
         //        userr.Total=String(Number(userr.Total)+Number(userr.team[0].Score));
          //   userr.save();
          //   console.log(userr);
-                 }
+          //       }
       //  })
               
     //    }
