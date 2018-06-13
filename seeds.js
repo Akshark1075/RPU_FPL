@@ -22,19 +22,19 @@
      //    }
     //  })
     //The upcoming part of code is to be uncommented inorder to update total score
-  //    User.find({}).populate("team").exec(function(err,user){
-   //      if(err){console.log(err)}
-    //     else{
-    ///          user.forEach(function(userr){
-       //          if(userr.Total!=null){
-      //            console.log(userr.Total)
-      //          userr.Total=String(Number(userr.Total)+Number(userr.team[0].Score));
-       //      userr.save();
-       //      console.log(userr);
-      //           }
+    // User.find({}).populate("team").exec(function(err,user){
+    //     if(err){console.log(err)}
+    //    else{
+     //        user.forEach(function(userr){
+      //////           if(userr.Total!=null){
+        //          console.log(userr.Total)
+        //        userr.Total=String(Number(userr.Total)+Number(userr.team[0].Score));
+         //   userr.save();
+         //   console.log(userr);
+                 }
       //  })
               
-      //  }
+    //    }
     //  })
 
 
@@ -48,22 +48,22 @@
       else
       {
           console.log("Removed def");
-          var data1=[{name:"Sharky",image:"/images/demo.jpg",score:"0",total:"0"},
+          var data1=[{name:"Sharky",image:"/images/demo.jpg",score:"6",total:"0"},
                     {name:"Adhi",image:"/images/demo.jpg",score:"0",total:"0"},
                     {name:"Sudhar",image:"/images/demo.jpg",score:"0",total:"0"},
-                    {name:"OX",image:"/images/demo.jpg",score:"0",total:"0"},
+                    {name:"OX",image:"/images/demo.jpg",score:"6",total:"0"},
                     {name:"Arjun",image:"/images/demo.jpg",score:"0",total:"0"},
                     {name:"Rahul",image:"/images/demo.jpg",score:"0",total:"0"},
                     {name:"Sanjeevi",image:"/images/demo.jpg",score:"0",total:"0"},
                     {name:"Yomi",image:"/images/demo.jpg",score:"0",total:"0"},
-                    {name:"Rajil",image:"/images/demo.jpg",score:"0",total:"0"},
+                    {name:"Rajil",image:"/images/demo.jpg",score:"6",total:"0"},
                     {name:"Jagan",image:"/images/demo.jpg",score:"0",total:"0"},
                     {name:"Kotti",image:"/images/demo.jpg",score:"0",total:"0"},
                     {name:"Vipul",image:"/images/demo.jpg",score:"0",total:"0"},
                     {name:"Hari",image:"/images/demo.jpg",score:"0",total:"0"},
                     {name:"Aathma",image:"/images/demo.jpg",score:"0",total:"0"},
-                    {name:"Boomi",image:"/images/demo.jpg",score:"0",total:"0"},
-                     {name:"Aravind",image:"/images/demo.jpg",score:"0",total:"0"}
+                    {name:"Boomi",image:"/images/demo.jpg",score:"6",total:"0"},
+                     {name:"Aravind",image:"/images/demo.jpg",score:"2",total:"0"}
                    
               ];
               data1.forEach(function(def){
@@ -83,21 +83,21 @@
       {
           console.log("Removed mid");
           var data2=[{name:"Abijith",image:"/images/demo.jpg",score:"0",total:"0"},
-                    {name:"Jeff",image:"/images/demo.jpg",score:"0",total:"0"},
+                    {name:"Jeff",image:"/images/demo.jpg",score:"6",total:"0"},
                     {name:"Reva",image:"/images/demo.jpg",score:"0",total:"0"},
                     {name:"Sai",image:"/images/demo.jpg",score:"0",total:"0"},
                     {name:"China",image:"/images/demo.jpg",score:"0",total:"0"},
-                    {name:"Satish",image:"/images/demo.jpg",score:"0",total:"0"},
+                    {name:"Satish",image:"/images/demo.jpg",score:"2",total:"0"},
                     {name:"Bharath",image:"/images/demo.jpg",score:"0",total:"0"},
                     {name:"Praz",image:"/images/demo.jpg",score:"0",total:"0"},
                     {name:"Rohit",image:"/images/demo.jpg",score:"0",total:"0"},
-                    {name:"Siva",image:"/images/demo.jpg",score:"0",total:"0"},
+                    {name:"Siva",image:"/images/demo.jpg",score:"2",total:"0"},
                     {name:"Mano",image:"/images/demo.jpg",score:"0",total:"0"},
                     {name:"Barghav",image:"/images/demo.jpg",score:"0",total:"0"},
-                    {name:"Vaidhi",image:"/images/demo.jpg",score:"0",total:"0"},
+                    {name:"Vaidhi",image:"/images/demo.jpg",score:"2",total:"0"},
                     {name:"Ash",image:"/images/demo.jpg",score:"0",total:"0"},
-                     {name:"Stephen",image:"/images/demo.jpg",score:"0",total:"0"},
-                      {name:"Vishnu",image:"/images/demo.jpg",score:"0",total:"0"}
+                     {name:"Stephen",image:"/images/demo.jpg",score:"2",total:"0"},
+                      {name:"Vishnu",image:"/images/demo.jpg",score:"2",total:"0"}
                    
                    
                    
@@ -120,18 +120,18 @@
       else
       {
           console.log("Removed fwd");
-          var data3=[{name:"Kutti",image:"/images/demo.jpg",score:"0",total:"0"},
-                    {name:"Andrew",image:"/images/demo.jpg",score:"0",total:"0"},
+          var data3=[{name:"Kutti",image:"/images/demo.jpg",score:"2",total:"0"},
+                    {name:"Andrew",image:"/images/demo.jpg",score:"12",total:"0"},
                     {name:"Venky",image:"/images/demo.jpg",score:"0",total:"0"},
                     {name:"Abishek",image:"/images/demo.jpg",score:"0",total:"0"},
-                    {name:"Rajesh",image:"/images/demo.jpg",score:"0",total:"0"},
+                    {name:"Rajesh",image:"/images/demo.jpg",score:"2",total:"0"},
                     {name:"Sanjith",image:"/images/demo.jpg",score:"0",total:"0"},
-                    {name:"Sanjay",image:"/images/demo.jpg",score:"0",total:"0"},
+                    {name:"Sanjay",image:"/images/demo.jpg",score:"2",total:"0"},
                     {name:"Vinu",image:"/images/demo.jpg",score:"0",total:"0"},
                     {name:"Santosh",image:"/images/demo.jpg",score:"0",total:"0"},
                     {name:"Sudharshan",image:"/images/demo.jpg",score:"0",total:"0"},
                     {name:"Prem",image:"/images/demo.jpg",score:"0",total:"0"},
-                     {name:"Naveenjii",image:"/images/demo.jpg",score:"0",total:"0"},
+                     {name:"Naveenjii",image:"/images/demo.jpg",score:"7",total:"0"},
                      {name:"Anwar",image:"/images/demo.jpg",score:"0",total:"0"}
               
               
