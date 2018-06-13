@@ -4,7 +4,8 @@
   name:String,
    image:String,
    score:String,
-   value:String
+  total:Number
+   
 });
 
 module.exports =  mongoose.model("Gk",gkSchema);

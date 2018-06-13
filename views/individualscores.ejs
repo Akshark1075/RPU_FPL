@@ -1,0 +1,95 @@
+<% include partials/header.ejs%>
+<div class="container">
+  
+  <table class="table  well" id="table" style="margin-top: 15px;color:rgb(230, 233, 239);background:rgb(27, 28, 28);
+
+
+   width:70%;margin:0 auto;">
+   <!--  background: #02111D;  
+background: -webkit-linear-gradient(to right, #02111D, #037BB5, #02111D); 
+background: linear-gradient(to right, #02111D, #037BB5, #02111D);-->
+  <thead>
+    <tr>
+      <th scope="col">####</th>
+      <th scope="col">Player Name</th>
+      
+      <th scope="col">Points</th>
+        <th scope="col">Total</th>
+       
+    </tr>
+  </thead>
+  <tbody>
+    
+    <%Gkk.forEach(function(Gkk){  %>
+
+    
+    <tr>
+      
+      <th> Goalie</th>
+      <td><%=Gk.name%></td>
+      <td><%=Gk.score%></td>
+       <td><%= Gk.total%></td>
+      </tr>
+       
+  <%   })%> 
+  
+
+      <%Deff.forEach(function(Def){  %>
+
+    
+    <tr>
+      
+      <th> Defenders</th>
+      <td><%= Def.name%></td>
+      <td><%= Def.score%></td>
+       <td><%= Def.total%></td>
+      </tr>
+       
+  <%   })%> 
+    <%Midd.forEach(function(Mid){  %>
+
+    
+    <tr>
+      
+      <th> Midfielders</th>
+      <td><%= Mid.name%></td>
+      <td><%= Mid.score%></td>
+       <td><%= Mid.total%></td>
+      </tr>
+       
+  <%   })%> 
+ 
+      
+      <%Fwdd.forEach(function(Fwd){  %>
+
+    
+    <tr>
+      
+      <th> Forward</th>
+      <td><%= Fwd.name%></td>
+      <td><%= Fwd.score%></td>
+       <td><%= Fwd.total%></td>
+      </tr>
+       
+  <%   })%> 
+      
+      
+      
+      
+      
+      
+  </tbody>
+  
+  
+  
+  
+</table>
+</div>
+
+
+
+
+
+
+
+<% include partials/footer.ejs%>
