@@ -246,7 +246,7 @@ app.get("/",function(req,res){
                                                             
                                                             
 
-        console.log(Pla1)
+        console.log(Pla1.score);console.log(Pla2.score);console.log(Pla3.score);console.log(Pla4.score);console.log(Pla5.score);console.log(Pla6.score);console.log(Pla7.score);console.log(Pla8.score);console.log(Pla9.score);console.log(Pla10.score);console.log(Pla11.score);
         //var previousscore=user.team[0].Score;
         //score=Number( previousscore)+Number(Pla1.score)+ Number(Pla2.score)+Number(Pla3.score)+Number(Pla4.score)+Number(Pla5.score)+Number(Pla6.score)+Number(Pla7.score)+Number(Pla8.score)+Number(Pla9.score)+Number(Pla10.score)+Number(Pla11.score);
         score=Number(Pla1.score)+ Number(Pla2.score)+Number(Pla3.score)+Number(Pla4.score)+Number(Pla5.score)+Number(Pla6.score)+Number(Pla7.score)+Number(Pla8.score)+Number(Pla9.score)+Number(Pla10.score)+Number(Pla11.score);

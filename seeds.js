@@ -22,20 +22,20 @@
      //    }
     //  })
     //The upcoming part of code is to be uncommented inorder to update total score
-  //   User.find({}).populate("team").exec(function(err,user){
-    //     if(err){console.log(err)}
-      //  else{
-        //    user.forEach(function(userr){
-          //     if(userr.Total!=null){
-            //      console.log(userr.Total)
-              //  userr.Total=String(Number(userr.Total)+Number(userr.team[0].Score));
-           //userr.save();
+   //  User.find({}).populate("team").exec(function(err,user){
+     //   if(err){console.log(err)}
+       // else{
+         // user.forEach(function(userr){
+           //    if(userr.Total!=null){
+             //     console.log(userr.Total)
+               // userr.Total=String(Number(userr.Total)+Number(userr.team[0].Score));
+         // userr.save();
           // console.log(userr);
-            //    }
-        //})
+            //   }
+    //    })
               
-        //}
-      //})
+      //  }
+//    })
 
 
       
@@ -98,7 +98,7 @@
                     {name:"Ash",image:"/images/demo.jpg",score:"0",total:"0"},
                      {name:"Stephen",image:"/images/demo.jpg",score:"0",total:"0"},
                       {name:"Vishnu",image:"/images/demo.jpg",score:"0",total:"0"},
-                      {name:"Rajesh",image:"/images/demo.jpg",score:"0",total:"0"}
+                     
                    
                    
                    
@@ -125,6 +125,7 @@
                     {name:"Andrew",image:"/images/demo.jpg",score:"0",total:"0"},
                     {name:"Venky",image:"/images/demo.jpg",score:"0",total:"0"},
                     {name:"Abishek",image:"/images/demo.jpg",score:"0",total:"0"},
+                     {name:"Rajesh",image:"/images/demo.jpg",score:"0",total:"0"},
                     
                     {name:"Sanjith",image:"/images/demo.jpg",score:"0",total:"0"},
                     {name:"Sanjay",image:"/images/demo.jpg",score:"0",total:"0"},
