@@ -97,7 +97,8 @@
                     {name:"Vaidhi",image:"/images/demo.jpg",score:"0",total:"0"},
                     {name:"Ash",image:"/images/demo.jpg",score:"0",total:"0"},
                      {name:"Stephen",image:"/images/demo.jpg",score:"0",total:"0"},
-                      {name:"Vishnu",image:"/images/demo.jpg",score:"0",total:"0"}
+                      {name:"Vishnu",image:"/images/demo.jpg",score:"0",total:"0"},
+                      {name:"Rajesh",image:"/images/demo.jpg",score:"0",total:"0"}
                    
                    
                    
@@ -124,7 +125,7 @@
                     {name:"Andrew",image:"/images/demo.jpg",score:"0",total:"0"},
                     {name:"Venky",image:"/images/demo.jpg",score:"0",total:"0"},
                     {name:"Abishek",image:"/images/demo.jpg",score:"0",total:"0"},
-                    {name:"Rajesh",image:"/images/demo.jpg",score:"0",total:"0"},
+                    
                     {name:"Sanjith",image:"/images/demo.jpg",score:"0",total:"0"},
                     {name:"Sanjay",image:"/images/demo.jpg",score:"0",total:"0"},
                     {name:"Vinu",image:"/images/demo.jpg",score:"0",total:"0"},
