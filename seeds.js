@@ -59,7 +59,7 @@
                     {name:"Rajil",image:"/images/demo.jpg",score:"6",total:"0"},
                     {name:"Jagan",image:"/images/demo.jpg",score:"0",total:"0"},
                     {name:"Kotti",image:"/images/demo.jpg",score:"0",total:"0"},
-                    {name:"Vipul",image:"/images/demo.jpg",score:"2",total:"0"},
+                    {name:"Vipul",image:"/images/demo.jpg",score:"6",total:"0"},
                     {name:"Hari",image:"/images/demo.jpg",score:"0",total:"0"},
                     {name:"Aathma",image:"/images/demo.jpg",score:"0",total:"0"},
                     {name:"Boomi",image:"/images/demo.jpg",score:"6",total:"0"},
@@ -87,17 +87,17 @@
                     {name:"Reva",image:"/images/demo.jpg",score:"0",total:"0"},
                     {name:"Sai",image:"/images/demo.jpg",score:"0",total:"0"},
                     {name:"China",image:"/images/demo.jpg",score:"0",total:"0"},
-                    {name:"Satish",image:"/images/demo.jpg",score:"2",total:"0"},
+                    {name:"Satish",image:"/images/demo.jpg",score:"3",total:"0"},
                     {name:"Bharath",image:"/images/demo.jpg",score:"0",total:"0"},
                     {name:"Praz",image:"/images/demo.jpg",score:"0",total:"0"},
                     {name:"Rohit",image:"/images/demo.jpg",score:"0",total:"0"},
-                    {name:"Siva",image:"/images/demo.jpg",score:"2",total:"0"},
+                    {name:"Siva",image:"/images/demo.jpg",score:"3",total:"0"},
                     {name:"Mano",image:"/images/demo.jpg",score:"0",total:"0"},
                     {name:"Barghav",image:"/images/demo.jpg",score:"0",total:"0"},
-                    {name:"Vaidhi",image:"/images/demo.jpg",score:"2",total:"0"},
+                    {name:"Vaidhi",image:"/images/demo.jpg",score:"3",total:"0"},
                     {name:"Ash",image:"/images/demo.jpg",score:"0",total:"0"},
-                     {name:"Stephen",image:"/images/demo.jpg",score:"2",total:"0"},
-                      {name:"Vishnu",image:"/images/demo.jpg",score:"2",total:"0"},
+                     {name:"Stephen",image:"/images/demo.jpg",score:"3",total:"0"},
+                      {name:"Vishnu",image:"/images/demo.jpg",score:"3",total:"0"},
                      
                    
                    
@@ -122,7 +122,7 @@
       {
           console.log("Removed fwd");
           var data3=[{name:"Kutti",image:"/images/demo.jpg",score:"2",total:"0"},
-                    {name:"Andrew",image:"/images/demo.jpg",score:"5",total:"0"},
+                    {name:"Andrew",image:"/images/demo.jpg",score:"2",total:"0"},
                     {name:"Venky",image:"/images/demo.jpg",score:"0",total:"0"},
                     {name:"Abishek",image:"/images/demo.jpg",score:"0",total:"0"},
                      {name:"Rajesh",image:"/images/demo.jpg",score:"2",total:"0"},
@@ -133,7 +133,7 @@
                     {name:"Santosh",image:"/images/demo.jpg",score:"0",total:"0"},
                     {name:"Sudharshan",image:"/images/demo.jpg",score:"0",total:"0"},
                     {name:"Prem",image:"/images/demo.jpg",score:"2",total:"0"},
-                     {name:"Naveenjii",image:"/images/demo.jpg",score:"7",total:"0"},
+                     {name:"Naveenjii",image:"/images/demo.jpg",score:"2",total:"0"},
                      {name:"Anwar",image:"/images/demo.jpg",score:"0",total:"0"}
               
               
