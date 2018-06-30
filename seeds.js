@@ -24,15 +24,15 @@
     //The upcoming part of code is to be uncommented inorder to update total score
 //User.find({}).populate("team").exec(function(err,user){
 //if(err){console.log(err)}
- // else{
- // user.forEach(function(userr){
-   // if(userr.Total!=null){
-     //  console.log(userr.Total)
-       // userr.Total=String(Number(userr.Total)+Number(userr.team[0].Score));
-        // userr.save();
-//     console.log(userr);
-  //  }
- //})
+ //else{
+//user.forEach(function(userr){
+  //  if(userr.Total!=null){
+    //  console.log(userr.Total)
+      // userr.Total=String(Number(userr.Total)+Number(userr.team[0].Score));
+        //userr.save();
+  //   console.log(userr);
+   //}
+ ///})
  //}
 //})
 
