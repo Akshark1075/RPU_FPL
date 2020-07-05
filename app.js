@@ -33,8 +33,11 @@ app.use(express.static('partials'));
 app.use(express.static('public'));
 app.use(flash());
 var mongoose=require("mongoose");
+const aws = require('aws-sdk');
+
+
 //mongoose.connect("mongodb://localhost/rpu");
-mongoose.connect("mongodb://SharkyArvind:sharky007@ds131492.mlab.com:31492/rpudb")
+mongoose.connect(process.env.databaseUrl);
 app.use(require("express-session")({
     secret:"hola",
     resave:false,
