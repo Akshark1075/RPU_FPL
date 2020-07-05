@@ -38,10 +38,9 @@ let s3 = new aws.S3({
     databaseUrl: process.env.databaseUrl
     
   });
-console.log(s3.databaseUrl)
-console.log(process.env.databaseUrl)
+
 //mongoose.connect("mongodb://localhost/rpu");
-mongoose.connect(s3.databaseUrl);
+mongoose.connect(process.env.databaseUrl);
 app.use(require("express-session")({
     secret:"hola",
     resave:false,
