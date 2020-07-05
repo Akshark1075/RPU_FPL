@@ -423,7 +423,7 @@ app.get("/login",function(req,res){
 app.post("/login", passport.authenticate("local",{
     successRedirect:"/",
     failureRedirect:"/login",
-    failWithError:true
+    failureFlash:true
 }),function(req,res){
 });
 app.get("/logout",function(req,res){
