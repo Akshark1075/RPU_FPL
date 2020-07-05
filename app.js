@@ -422,7 +422,8 @@ app.get("/login",function(req,res){
 });
 app.post("/login", passport.authenticate("local",{
     successRedirect:"/",
-    failureRedirect:"/login"
+    failureRedirect:"/login",
+    failWithError:true
 }),function(req,res){
 });
 app.get("/logout",function(req,res){
