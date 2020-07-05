@@ -34,19 +34,19 @@ background: linear-gradient(to right, #02111D, #037BB5, #02111D);-->
       <td><%= userr.team[0].Teamname%> <a href="/showpage/<%=userr.team[0]._id %>" class="btn btn-success pull-right">View Team </a></td>
       
       <% }else{ %>
-      <td>null </td>
+      <td>Unknown FC</td>
       <% }%>
       
        <% if(userr.team[0]){%>
       <td><%= userr.team[0].Score%></td>
        
       <% }else{ %>
-      <td>null </td>
+      <td>NA</td>
       <% }%>
       <%if(userr.Total!=null){ %>
      <td><%=userr.Total %></td>
      <% }else{ %>
-      <td>null</td>
+      <td>NA</td>
       <% }%>
       </tr>
        
