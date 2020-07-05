@@ -33,7 +33,7 @@ app.use(express.static('partials'));
 app.use(express.static('public'));
 app.use(flash());
 var mongoose=require("mongoose");
-const aws = require('aws-sdk');
+
 
 
 //mongoose.connect("mongodb://localhost/rpu");
