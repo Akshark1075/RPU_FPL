@@ -33,11 +33,14 @@ app.use(express.static('partials'));
 app.use(express.static('public'));
 app.use(flash());
 var mongoose=require("mongoose");
-
-
+const aws = require('aws-sdk');
+let s3 = new aws.S3({
+    databaseUrl: process.env.databaseUrl
+    
+  });
 
 //mongoose.connect("mongodb://localhost/rpu");
-mongoose.connect(process.env.databaseUrl);
+mongoose.connect(databaseUrl);
 app.use(require("express-session")({
     secret:"hola",
     resave:false,
