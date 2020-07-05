@@ -40,7 +40,7 @@ let s3 = new aws.S3({
   });
 
 //mongoose.connect("mongodb://localhost/rpu");
-mongoose.connect(databaseUrl);
+mongoose.connect(s3.databaseUrl);
 app.use(require("express-session")({
     secret:"hola",
     resave:false,
