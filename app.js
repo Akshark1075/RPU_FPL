@@ -33,14 +33,9 @@ app.use(express.static('partials'));
 app.use(express.static('public'));
 app.use(flash());
 var mongoose=require("mongoose");
-const aws = require('aws-sdk');
-let s3 = new aws.S3({
-    databaseUrl: process.env.databaseUrl
-    
-  });
-
 //mongoose.connect("mongodb://localhost/rpu");
-mongoose.connect(process.env.databaseUrl);
+
+mongoose.connect("mongodb+srv://SharkyArvind:Covid-19@rpudb.zzbf9.mongodb.net/rpudb?retryWrites=true&w=majority");
 app.use(require("express-session")({
     secret:"hola",
     resave:false,
