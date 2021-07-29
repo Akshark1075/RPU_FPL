@@ -1,5 +1,5 @@
  <% include partials/header.ejs %>
- <div class="container">
+ <div class="container-fluid">
      
      <div class="well"style="background:rgb(27, 28, 28)">
          <h1 class="text-center"style="color:rgb(230, 233, 239);">If you want to say something!!!</h1>
@@ -13,7 +13,7 @@
          <%comments.forEach(function(comment){ %>
      
       
-         <h2 >  <strong><%=comment.author.username %></strong>
+         <h3 >  <strong><%=comment.author.username %></strong>
         
        <form action="/comments/<%=comment._id%>?_method=DELETE" method="POST" style="display:inline">
         
@@ -26,11 +26,11 @@
         <%if(currentUser && currentUser._id.equals(comment.author.id)){%>
           <a class="btn btn-sm btn-warning pull-right"style="display:inline"href="/comments/<%=comment._id%>/edit">Edit</a>
            <% }%>
-       </h2>
+       </h3>
          <p><em><%=comment.text%>         </em></p>
        
          <% })%>
-         
+       <hr>  
          
          </div>
      

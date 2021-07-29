@@ -4,17 +4,17 @@
   <table class="table  well" id="table" style="margin-top: 15px;color:rgb(230, 233, 239);background:rgb(27, 28, 28);
 
 
-   width:70%;margin:0 auto;">
+   width:70%;margin:0 auto;text-align: center;">
    <!--  background: #02111D;  
 background: -webkit-linear-gradient(to right, #02111D, #037BB5, #02111D); 
 background: linear-gradient(to right, #02111D, #037BB5, #02111D);-->
   <thead>
     <tr>
-      <th scope="col">####</th>
-      <th scope="col">User_Name</th>
-      <th scope="col">Team_Name</th>
-      <th scope="col">Points</th>
-        <th scope="col">Total</th>
+      <th style="text-align: center;" scope="col">####</th>
+      <th style="text-align: center;" scope="col">User_Name</th>
+      <th style="text-align: center;" scope="col">Team_Name</th>
+      <th style="text-align: center;" scope="col">Points</th>
+        <th style="text-align: center;" scope="col">Total</th>
        
     </tr>
   </thead>
@@ -31,7 +31,7 @@ background: linear-gradient(to right, #02111D, #037BB5, #02111D);-->
       <th> #</th>
       <td><%= userr.username%></td>
      <% if(userr.team[0]){%>
-      <td><%= userr.team[0].Teamname%> <a href="/showpage/<%=userr.team[0]._id %>" class="btn btn-success pull-right">View Team </a></td>
+      <td> <a href="/showpage/<%=userr.team[0]._id %>" class="btn btn-md btn-info"><%= userr.team[0].Teamname%> </a></td>
       
       <% }else{ %>
       <td>Unknown FC</td>

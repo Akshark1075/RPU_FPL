@@ -5,6 +5,8 @@ var Schema = mongoose.Schema;
 
 var UserSchema=new mongoose.Schema({
     username:String,
+    email:String,
+    mobile:Number,
     password:String,
     team:[{
         type:mongoose.Schema.Types.ObjectId,

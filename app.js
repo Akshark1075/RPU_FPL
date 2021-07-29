@@ -35,7 +35,7 @@ app.use(flash());
 var mongoose=require("mongoose");
 //mongoose.connect("mongodb://localhost/rpu");
 
-mongoose.connect("mongodb+srv://SharkyArvind:Covid-19@rpudb.zzbf9.mongodb.net/rpudb?retryWrites=true&w=majority");
+mongoose.connect("mongodb+srv://SharkyArvind:Covid-19@rpudb.zzbf9.mongodb.net/rpudb?retryWrites=true&w=majority",{useNewUrlParser:true});
 app.use(require("express-session")({
     secret:"hola",
     resave:false,
@@ -292,7 +292,7 @@ app.post("/signup",function(req,res){
     console.log(req.body.username);
     console.log(req.body.password);
     console.log(req.body.email);
-    User.register(new User({username:req.body.username}),req.body.password,function(err,user){
+    User.register(new User({username:req.body.username,email:req.body.email,mobile:req.body.mobile}),req.body.password,function(err,user){
         if(err){
             console.log(err);
             req.flash("error",err.message)
@@ -566,6 +566,6 @@ app.get("/pointstable",function(req,res){
    }})
 })
 
-app.listen(process.env.PORT,process.env.ID,function(){
+app.listen(process.env.PORT||3000,process.env.ID,function(){
     console.log ("yoloyoyoyo");
 });

@@ -14,43 +14,85 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <style>
     select,input{color:black;}
-    body{font-family: 'Satisfy', cursive;font-size:20px}
+    body{font-family: 'Satisfy', cursive;font-size:20px;
+    background-color: #000000;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 800'%3E%3Cg %3E%3Ccircle fill='%23000000' cx='400' cy='400' r='600'/%3E%3Ccircle fill='%23180d1c' cx='400' cy='400' r='500'/%3E%3Ccircle fill='%23261431' cx='400' cy='400' r='400'/%3E%3Ccircle fill='%23351947' cx='400' cy='400' r='300'/%3E%3Ccircle fill='%23451e5e' cx='400' cy='400' r='200'/%3E%3Ccircle fill='%23552277' cx='400' cy='400' r='100'/%3E%3C/g%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
+/* background by SVGBackgrounds.com */
+}
+    #signupContainer{
+        width: 50%;
+    }
+    #loginContainer{
+        width: 50%;
+    }
+    @media (max-width:800px) {#uname{display: none;}}
+    @media (max-width:750px) {
+        #signupContainer{
+            width:60%;
+            height: 70%;
+        }
+        #loginContainer{
+        width: 60%;
+        height: 70%;
+    }
+    }
+    @media (max-width:550px) {
+        #signupContainer{
+            width:80%;
+            height: 85%;
+        }
+        #loginContainer{
+        width: 80%;
+        height: 90%;
+    }
+    }
+  
 </style>
  
 </head>
-    <body style="width:100%;" background="/images/wallpaper.jpg"style="background-repeat:no-repeat; background-size:cover; background-position:center;height:150%;">
-        <nav class="navbar navbar-inverse">
-	<div class="container">
-
-<div class="navbar-header" >
+    <!-- <body style="width:100%; height: 100vh;" background="/images/wallpaper.jpg"style="background-repeat:no-repeat; background-size:cover; background-position:center;height:150%;"> -->
+       <body style="height: 100vh;width: 100%;">
+        <nav class="navbar navbar-inverse" style="vertical-align:middle;">
+	
       
-	<a  href="/" class="navbar-brand" style="width:50%;" ><span ><img class="logo" src="/images/RPU.png" alt="My_Logo" width="20%"></span></a>
+	<a href="/" class="navbar-brand" ><span ><img class="logo" src="/images/RPU.png" alt="My_Logo" width="50px" height="100%"></span></a>
  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#heeha">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button> 
-</div>    
-<div class="collapse navbar-collapse" id="heeha">
-    <ul class="nav navbar-nav"style="margin-right:30%;margin-left:0%">
+  
+<div class="collapse navbar-collapse" id="heeha" style="width:100%;">
+    <ul class="nav navbar-nav mr-auto" style="height: 100%;">
 	<!--<li><a href="/pickateam">Pick-a-team</a></li>-->
-	<li><a href="/yourteam">My_Team</a></li>
-	<li><a href="/pointstable">Points_Table</a></li>
-	<li><a href="/info">How_to_play</a></li>
-		<li><a href="/comments">Comments</a></li>
-	</ul>
-    
-    <ul class="nav navbar-nav navbar-right">
+    <!-- <ul style="margin-right:30%;margin-left:0%"> -->
+        <style>
+            .navbar-nav>li>a, .navbar-brand {line-height: unset;}
+        </style>
+	<li class="nav-item" style="height: 100%;"><a class="nav-link" href="/yourteam">My_Team</a></li>
+	<li class="nav-item" style="height: 100%;"><a class="nav-link" href="/pointstable">Points_Table</a></li>
+	<li class="nav-item" style="height: 100%;"><a class="nav-link" href="/info">How_to_play</a></li>
+	<li class="nav-item" style="height: 100%;"><a class="nav-link" href="/comments">Comments</a></li>
+	
 <% if(!currentUser){%>
-	<li ><a href="/signup"><span class="glyphicon glyphicon-user"style="padding-right:5px;"></span> Sign up</a></li>
-	<li ><a href="/login"><span class="glyphicon glyphicon-log-in"style="padding-right:5px;"> Login</a></li>
+	<li class="nav-item" style="height: 100%;"><a class="nav-link" href="/signup"> Sign up</a></li>
+	<li class="nav-item" style="height: 100%;"><a class="nav-link" href="/login"> Login</a></li>
 
 <% } else {%>
-    <li style="padding:0;margin-top:7px;color:white;"><h2 style="margin:0 0;padding:0"> Hi <%=currentUser.username%></h2></li>  
-	<li ><a href="/logout"><span class="glyphicon glyphicon-log-in">Logout</a></li>
+    
+	<li class="nav-item" style="height: 100%;"><a class="nav-link" href="/logout">Logout</a></li>
+    <!-- <li class="nav-item pull-right" id="uname" style="color:white;height:100%;"> Hi <%=currentUser.username%></li>  -->
 	<% }%>
+  
 </ul>
-</div></div>
+<% if(currentUser){%>
+  
+    <span class="navbar-text pull-right" id="uname" style="color:white;height:100%;text-decoration: none;"> Hi <%=currentUser.username%></span> 
+<
+	<% }%>
+</div>
 
 </nav>
  <% if(error && error.length>0){%>
